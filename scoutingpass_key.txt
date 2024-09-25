@@ -1,0 +1,75 @@
+FRC 5409 scouting data formats. The system uses tab-separated values to carry data.
+DISCLAIMER: Each hyphen represents a \t character. They have been replaced for visual aid only. DO NOT ACTUALLY USE HYPHENS.
+
+X represents either an alphabetical or alphanumeric character
+# represents a numerical character
+B represents a boolean, expressed with 0 or 1
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+2024
+
+XX-20##XXXXX-XX-###-X#-####-[##]-B-##-##-[##.#,##.#,##.#,...]-##-##-##-##-##-##-X-##.#-X-#-B-X-X-#-B-B-B-B-COMMENTS
+
+LENGEND IN ORDER:
+
+XX is the scouter initials
+20##XXXX is the event code (i.e. 2024ONNOB)
+XX is the match type:
+- "qm" (qualification match)
+- "sf" (semifinal)
+- "f" (final)
+### is the match number
+X# is the scouted robot:
+- X is either "r" or "b" for red and blue
+- # is the position in the alliance (1, 2, 3, or rarely 4)
+#### is the team number
+[##] is the auto start position:
+- nominal field position is blue alliance west, red alliance east
+- field is split vertically into 6 equal sections; each section has height of 12
+- "12", "24", "36", "48", "60", "72" (red alliance, north-to-south)
+- "1", "13", "25", "37", "49", "61" (blue alliance, north-to-south)
+B is whether the robot left the starting zone in autonomous
+## is the number of notes scored in the amp during auto
+## is the number of notes scored in the speaker during auto
+[##.#,##.#,##.#,...] is the array of cycle times created by the timer
+## is the number of notes scored in the amp
+## is the number of notes scored in the speaker
+## is the number of times the robot's alliance was amplified
+## is the number of missed shots
+## is the number of times the robot fed another robot a note
+## is the number of notes the robot defended from being entered
+X is how the robot picked up notes:
+- "s" (source)
+- "f" (floor)
+- "b" (both)
+- "x" (not attempted)
+##.# is the stage timer time
+X is the final status in endgame:
+- "1" (parked)
+- "2" (harmony)
+- "3" (onstage)
+- "4" (onstage with spotlight)
+- "a" (attempted but failed)
+- "x" (not attempted)
+# is the number of spotlit notes
+B is whether the human player spotlit a microphone
+X measures driver skill:
+- "1" (not effective)
+- "2" (average)
+- "3" (very effective)
+- "x" (not observed)
+X measures robot's defense:
+- "1" (below average)
+- "2" (average)
+- "3" (good)
+- "4" (excellent)
+- "x" (did not play defense)
+# is the robot's speed rating:
+- "1" to "5" (slow to fast)
+B is whether the robot died or was immobilized
+B is whether the robot is tippy or almost fell over
+B is whether the robot tends to drop notes:
+- "1" (>2 dropped noets)
+B is whether the robot makes a good alliance partner
+COMMENTS is the comment field from the scouter
