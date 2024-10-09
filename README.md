@@ -29,7 +29,15 @@ Please note that Lookout will never support FRC seasons older than Crescendo, as
 
 **Will there be an Android port?**
 
-No. The answer will always be no. This is an app exclusive to iOS and uses SwiftUI's capabilities to achieve its UI/UX.
+No. The answer will always be no. This is an app exclusive to iOS and uses SwiftUI's capabilities to achieve its UI/UX. I would also not wish Kotlin on my worst enemy.
+
+**Are scouting sessions heavy on iPhone storage?**
+
+For those of you with very limited iPhone storage left, don't worry. Each scouting session takes up barely any storage, and QR codes are generated on-request.
+
+**Is an internet connection required to use Lookout?**
+
+No! An internet connection is absolutely not required while using Lookout, partly to comply with FRC field wireless rules. However, you may connect to the internet to download match schedules and team numbers for convenience.
 
 **When is this app going to be published to the App Store?**
 
